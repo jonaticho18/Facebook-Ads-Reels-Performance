@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club de Héroes - Análisis de Reels 17 Sept 2025</title>
+    <title>Club de Héroes - Análisis de Reels CORREGIDO 17 Sept 2025</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -46,14 +46,14 @@
             overflow: hidden;
         }
 
-        .header-section::before {
-            content: '🎯';
-            position: absolute;
-            top: 15px;
-            right: 30px;
-            font-size: 3rem;
-            opacity: 0.3;
-            animation: rotate 4s linear infinite;
+        .correction-banner {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
         }
 
         .winners-section {
@@ -102,31 +102,6 @@
             font-size: 0.8rem;
             color: var(--hero-green);
             font-weight: 600;
-        }
-
-        .reel-card {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 15px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            border-left: 5px solid var(--hero-blue);
-            transition: all 0.3s ease;
-        }
-
-        .reel-card:hover {
-            transform: translateX(5px);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-        }
-
-        .reel-card.winner {
-            border-left-color: var(--hero-red);
-            background: linear-gradient(135deg, rgba(231, 76, 60, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
-        }
-
-        .reel-card.top-performer {
-            border-left-color: var(--hero-green);
-            background: linear-gradient(135deg, rgba(39, 174, 96, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
         }
 
         .chart-container {
@@ -233,11 +208,6 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        @keyframes rotate {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
         .pulse-winner {
             animation: pulseWinner 2s infinite;
         }
@@ -255,21 +225,27 @@
             <!-- Header Section -->
             <div class="header-section">
                 <h1><i class="fas fa-video"></i> Club de Héroes</h1>
-                <h2>Análisis de Performance de Reels</h2>
-                <p><i class="far fa-calendar-alt"></i> 17 de Septiembre 2025 | <i class="fas fa-chart-bar"></i> Reporte Diario de Testing</p>
+                <h2>Análisis de Performance de Reels - DATOS CORREGIDOS</h2>
+                <p><i class="far fa-calendar-alt"></i> 17 de Septiembre 2025 | <i class="fas fa-chart-bar"></i> Reporte Diario Actualizado</p>
+            </div>
+
+            <!-- Correction Banner -->
+            <div class="correction-banner">
+                <h4><i class="fas fa-exclamation-triangle"></i> DATOS CORREGIDOS</h4>
+                <p><strong>Totales actualizados con datos oficiales de campaña:</strong> 42 conversaciones totales, $225.50 inversión total</p>
             </div>
 
             <!-- Winners Banner -->
             <div class="winners-section">
-                <h3><i class="fas fa-trophy"></i> GANADORES DEL DÍA</h3>
+                <h3><i class="fas fa-trophy"></i> GANADORES DEL DÍA - DATOS REALES</h3>
                 <div class="row">
                     <div class="col-md-4">
                         <h5><span class="crown-icon">👑</span>Conversaciones: <strong>Reel 6</strong></h5>
-                        <p>24 conversaciones | $4.94 CPA</p>
+                        <p>24 conversaciones (57% del total) | $4.94 CPA</p>
                     </div>
                     <div class="col-md-4">
                         <h5><span class="crown-icon">🚀</span>CTR: <strong>Reel 1</strong></h5>
-                        <p>5.13% CTR | Máximo engagement</p>
+                        <p>5.13% CTR | Solo $1.15 invertido</p>
                     </div>
                     <div class="col-md-4">
                         <h5><span class="crown-icon">🎯</span>Hook Rate: <strong>Reel 7</strong></h5>
@@ -278,48 +254,48 @@
                 </div>
             </div>
 
-            <!-- KPIs Section -->
+            <!-- KPIs Section - CORREGIDOS -->
             <div class="row">
                 <div class="col-md-2 col-6">
                     <div class="kpi-card pulse-winner">
-                        <div class="kpi-value">8</div>
-                        <div class="kpi-label">Reels Activos</div>
-                        <div class="kpi-desc">Testing masivo</div>
+                        <div class="kpi-value">42</div>
+                        <div class="kpi-label">Conversaciones TOTAL</div>
+                        <div class="kpi-desc">Campaña completa</div>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
                     <div class="kpi-card">
                         <div class="kpi-value">27</div>
-                        <div class="kpi-label">Conversaciones</div>
-                        <div class="kpi-desc">Total del día</div>
+                        <div class="kpi-label">Conv. Reels</div>
+                        <div class="kpi-desc">64% del total</div>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
                     <div class="kpi-card">
-                        <div class="kpi-value">$167</div>
-                        <div class="kpi-label">Inversión</div>
-                        <div class="kpi-desc">Solo en Reels</div>
+                        <div class="kpi-value">$225.50</div>
+                        <div class="kpi-label">Inversión TOTAL</div>
+                        <div class="kpi-desc">Campaña completa</div>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
                     <div class="kpi-card">
-                        <div class="kpi-value">6,772</div>
-                        <div class="kpi-label">Alcance</div>
+                        <div class="kpi-value">7,880</div>
+                        <div class="kpi-label">Alcance TOTAL</div>
                         <div class="kpi-desc">Usuarios únicos</div>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
                     <div class="kpi-card">
-                        <div class="kpi-value">2.37%</div>
-                        <div class="kpi-label">CTR Promedio</div>
-                        <div class="kpi-desc">Sobre benchmark</div>
+                        <div class="kpi-value">2.71%</div>
+                        <div class="kpi-label">CTR TOTAL</div>
+                        <div class="kpi-desc">Campaña general</div>
                     </div>
                 </div>
                 <div class="col-md-2 col-6">
                     <div class="kpi-card">
-                        <div class="kpi-value">24.6%</div>
-                        <div class="kpi-label">Hook Rate</div>
-                        <div class="kpi-desc">Promedio</div>
+                        <div class="kpi-value">$5.37</div>
+                        <div class="kpi-label">CPA TOTAL</div>
+                        <div class="kpi-desc">Costo por conv.</div>
                     </div>
                 </div>
             </div>
@@ -328,14 +304,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="chart-container">
-                        <div class="chart-title">Conversaciones por Reel</div>
-                        <canvas id="conversationsChart"></canvas>
+                        <div class="chart-title">Conversaciones: Reels vs Otros Anuncios</div>
+                        <canvas id="conversionsComparisonChart"></canvas>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="chart-container">
-                        <div class="chart-title">CTR vs Hook Rate por Reel</div>
-                        <canvas id="ctrHookChart"></canvas>
+                        <div class="chart-title">Inversión: Reels vs Total Campaña</div>
+                        <canvas id="spendComparisonChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -343,14 +319,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="chart-container">
-                        <div class="chart-title">Inversión vs Performance</div>
-                        <canvas id="spendPerformanceChart"></canvas>
+                        <div class="chart-title">Performance Individual de Reels</div>
+                        <canvas id="reelsPerformanceChart"></canvas>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="chart-container">
-                        <div class="chart-title">Alcance vs CTR (Eficiencia)</div>
-                        <canvas id="reachEfficiencyChart"></canvas>
+                        <div class="chart-title">CTR vs Hook Rate - Solo Reels</div>
+                        <canvas id="ctrHookReelsChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -359,15 +335,15 @@
             <div class="row">
                 <div class="col-12">
                     <div class="performance-table">
-                        <h4 class="chart-title" style="padding: 25px 0;">Análisis Detallado por Reel</h4>
+                        <h4 class="chart-title" style="padding: 25px 0;">TODOS LOS ANUNCIOS - Comparación Reels vs No-Reels</h4>
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>Reel</th>
+                                    <th>Anuncio</th>
+                                    <th>Tipo</th>
                                     <th>Conversaciones</th>
                                     <th>CTR</th>
                                     <th>Hook Rate</th>
-                                    <th>Alcance</th>
                                     <th>Inversión</th>
                                     <th>CPA</th>
                                     <th>Performance</th>
@@ -376,83 +352,83 @@
                             <tbody>
                                 <tr class="table-success">
                                     <td><strong>Reel 6</strong> 👑</td>
+                                    <td><span class="badge bg-danger">Reel</span></td>
                                     <td><strong>24</strong></td>
                                     <td>2.56%</td>
                                     <td>25.58%</td>
-                                    <td>4,906</td>
                                     <td>$118.65</td>
                                     <td>$4.94</td>
                                     <td><span class="metric-badge badge-excellent">🔥 CAMPEÓN</span></td>
                                 </tr>
+                                <tr class="table-warning">
+                                    <td><strong>🎥 Los latinos no vinimos a sobrevivir</strong></td>
+                                    <td><span class="badge bg-primary">No-Reel</span></td>
+                                    <td><strong>9</strong></td>
+                                    <td>3.35%</td>
+                                    <td>28.02%</td>
+                                    <td>$36.17</td>
+                                    <td>$4.02</td>
+                                    <td><span class="metric-badge badge-excellent">⭐ TOP No-Reel</span></td>
+                                </tr>
+                                <tr class="table-info">
+                                    <td><strong>🎯 Hispanos que inspiran</strong></td>
+                                    <td><span class="badge bg-primary">No-Reel</span></td>
+                                    <td>4</td>
+                                    <td><strong>4.42%</strong></td>
+                                    <td><strong>33.71%</strong></td>
+                                    <td>$17.41</td>
+                                    <td>$4.35</td>
+                                    <td><span class="metric-badge badge-excellent">🎯 MEJOR CTR</span></td>
+                                </tr>
                                 <tr class="table-info">
                                     <td><strong>Reel 1</strong> 🚀</td>
+                                    <td><span class="badge bg-danger">Reel</span></td>
                                     <td>0</td>
                                     <td><strong>5.13%</strong></td>
                                     <td>28.21%</td>
-                                    <td>31</td>
                                     <td>$1.15</td>
                                     <td>-</td>
-                                    <td><span class="metric-badge badge-excellent">⭐ TOP CTR</span></td>
-                                </tr>
-                                <tr class="table-warning">
-                                    <td><strong>Reel 7</strong> 🎯</td>
-                                    <td>1</td>
-                                    <td>0.85%</td>
-                                    <td><strong>32.86%</strong></td>
-                                    <td>316</td>
-                                    <td>$9.10</td>
-                                    <td>$9.10</td>
-                                    <td><span class="metric-badge badge-excellent">🎯 TOP HOOK</span></td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Reel 4</strong></td>
-                                    <td>0</td>
-                                    <td>2.73%</td>
-                                    <td>14.21%</td>
-                                    <td>169</td>
-                                    <td>$3.78</td>
-                                    <td>-</td>
-                                    <td><span class="metric-badge badge-good">💎 Potencial</span></td>
+                                    <td><span class="metric-badge badge-excellent">⭐ POTENCIAL</span></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Reel 2</strong></td>
+                                    <td><span class="badge bg-danger">Reel</span></td>
                                     <td>1</td>
                                     <td>2.54%</td>
                                     <td>19.55%</td>
-                                    <td>546</td>
                                     <td>$14.98</td>
                                     <td>$14.98</td>
                                     <td><span class="metric-badge badge-average">⚡ Mejorable</span></td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Reel 5</strong></td>
-                                    <td>0</td>
-                                    <td>2.15%</td>
-                                    <td>27.08%</td>
-                                    <td>294</td>
-                                    <td>$8.52</td>
-                                    <td>-</td>
-                                    <td><span class="metric-badge badge-good">📊 Testing</span></td>
+                                    <td><strong>Reel 7</strong></td>
+                                    <td><span class="badge bg-danger">Reel</span></td>
+                                    <td>1</td>
+                                    <td>0.85%</td>
+                                    <td><strong>32.86%</strong></td>
+                                    <td>$9.10</td>
+                                    <td>$9.10</td>
+                                    <td><span class="metric-badge badge-good">🎯 MEJOR HOOK</span></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Reel 8</strong></td>
+                                    <td><span class="badge bg-danger">Reel</span></td>
                                     <td>1</td>
                                     <td>1.80%</td>
                                     <td>28.53%</td>
-                                    <td>296</td>
                                     <td>$5.68</td>
                                     <td>$5.68</td>
-                                    <td><span class="metric-badge badge-good">🧪 Experimental</span></td>
+                                    <td><span class="metric-badge badge-good">🧪 Testing</span></td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Reel 9</strong></td>
+                                    <td><strong>Otros Reels</strong> (4,5,9)</td>
+                                    <td><span class="badge bg-danger">Reel</span></td>
                                     <td>0</td>
-                                    <td>1.22%</td>
-                                    <td>20.41%</td>
-                                    <td>214</td>
-                                    <td>$5.26</td>
+                                    <td>2.03%</td>
+                                    <td>21.94%</td>
+                                    <td>$17.56</td>
                                     <td>-</td>
-                                    <td><span class="metric-badge badge-poor">❄️ Bajo</span></td>
+                                    <td><span class="metric-badge badge-poor">❄️ Sin Conv.</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -462,51 +438,45 @@
 
             <!-- Insights Section -->
             <div class="insights-section">
-                <h4><i class="fas fa-brain"></i> Insights y Recomendaciones Estratégicas</h4>
+                <h4><i class="fas fa-brain"></i> Análisis Corregido y Conclusiones</h4>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="stat-highlight">
-                            <h6><i class="fas fa-crown"></i> Reel 6 - El Claro Ganador</h6>
+                            <h6><i class="fas fa-chart-pie"></i> Distribución Real de Conversaciones</h6>
                             <ul>
-                                <li><strong>89% de todas las conversaciones</strong> (24 de 27)</li>
-                                <li><strong>Mayor alcance:</strong> 4,906 usuarios</li>
-                                <li><strong>CPA competitivo:</strong> $4.94</li>
-                                <li><strong>Acción:</strong> Escalar presupuesto inmediatamente</li>
+                                <li><strong>Reels:</strong> 27 conv. (64% del total)</li>
+                                <li><strong>No-Reels:</strong> 15 conv. (36% del total)</li>
+                                <li><strong>Reel 6:</strong> Domina con 24 conversaciones</li>
+                                <li><strong>Conclusión:</strong> Los Reels SÍ funcionan mejor</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="stat-highlight">
-                            <h6><i class="fas fa-rocket"></i> Reel 1 - Potencial Explosivo</h6>
+                            <h6><i class="fas fa-dollar-sign"></i> Eficiencia de Inversión</h6>
                             <ul>
-                                <li><strong>CTR excepcional:</strong> 5.13% (2.8x benchmark)</li>
-                                <li><strong>Hook rate sólido:</strong> 28.21%</li>
-                                <li><strong>Muy bajo gasto:</strong> Solo $1.15</li>
-                                <li><strong>Acción:</strong> Aumentar presupuesto para validar</li>
+                                <li><strong>CPA General:</strong> $5.37</li>
+                                <li><strong>Reels:</strong> $167 → 27 conv.</li>
+                                <li><strong>No-Reels:</strong> $58 → 15 conv.</li>
+                                <li><strong>Conclusión:</strong> Similar eficiencia, pero Reels escalan mejor</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="stat-highlight">
-                            <h6><i class="fas fa-bullseye"></i> Optimizaciones Inmediatas</h6>
+                            <h6><i class="fas fa-rocket"></i> Acciones Inmediatas</h6>
                             <ul>
-                                <li><strong>Pausar Reel 9:</strong> Performance más baja</li>
-                                <li><strong>Crear variaciones de Reel 6:</strong> Diferentes hooks</li>
-                                <li><strong>Escalar Reel 1:</strong> Validar con más presupuesto</li>
-                                <li><strong>Analizar Reel 7:</strong> Mejor hook rate</li>
+                                <li><strong>Escalar Reel 6:</strong> $200/día</li>
+                                <li><strong>Validar Reel 1:</strong> $50/día</li>
+                                <li><strong>Pausar Reels 4,5,9:</strong> Sin conversiones</li>
+                                <li><strong>Optimizar No-Reels:</strong> Buen potencial también</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="mt-4 p-3" style="background: rgba(255,255,255,0.1); border-radius: 10px;">
-                    <h5><i class="fas fa-chart-line"></i> Próximos Pasos Recomendados:</h5>
-                    <ol>
-                        <li><strong>Escalar Reel 6:</strong> Aumentar presupuesto diario a $200</li>
-                        <li><strong>Validar Reel 1:</strong> Asignar $50/día para confirmar potencial</li>
-                        <li><strong>Crear variaciones:</strong> 3 nuevos Reels basados en Reel 6</li>
-                        <li><strong>Pausar bajo rendimiento:</strong> Reel 9 y redistribuir presupuesto</li>
-                        <li><strong>Monitorear Reel 7:</strong> Alto hook rate puede indicar mejora</li>
-                    </ol>
+                    <h5><i class="fas fa-lightbulb"></i> Insight Principal:</h5>
+                    <p><strong>Los Reels generan más conversaciones (64%) pero los anuncios No-Reels también funcionan bien.</strong> La estrategia óptima es mantener ambos formatos, enfocando presupuesto en los winners de cada categoría: Reel 6 para Reels y "Los latinos no vinimos a sobrevivir" para No-Reels.</p>
                 </div>
             </div>
         </div>
@@ -517,26 +487,41 @@
         Chart.defaults.font.family = "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
         Chart.defaults.color = '#666';
 
-        // Datos de los Reels
-        const reelNames = ['Reel 1', 'Reel 2', 'Reel 4', 'Reel 5', 'Reel 6', 'Reel 7', 'Reel 8', 'Reel 9'];
-        const conversations = [0, 1, 0, 0, 24, 1, 1, 0];
-        const ctrValues = [5.13, 2.54, 2.73, 2.15, 2.56, 0.85, 1.80, 1.22];
-        const hookRates = [28.21, 19.55, 14.21, 27.08, 25.58, 32.86, 28.53, 20.41];
-        const spend = [1.15, 14.98, 3.78, 8.52, 118.65, 9.10, 5.68, 5.26];
-        const reach = [31, 546, 169, 294, 4906, 316, 296, 214];
+        // Chart 1: Comparación Conversiones Reels vs No-Reels
+        const convComparisonCtx = document.getElementById('conversionsComparisonChart').getContext('2d');
+        new Chart(convComparisonCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Reels (27)', 'No-Reels (15)'],
+                datasets: [{
+                    data: [27, 15],
+                    backgroundColor: ['#e74c3c', '#3498db'],
+                    borderWidth: 4,
+                    borderColor: '#fff'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { 
+                        position: 'bottom', 
+                        labels: { padding: 20 }
+                    }
+                }
+            }
+        });
 
-        // Chart 1: Conversaciones por Reel
-        const conversationsCtx = document.getElementById('conversationsChart').getContext('2d');
-        new Chart(conversationsCtx, {
+        // Chart 2: Comparación Inversión
+        const spendComparisonCtx = document.getElementById('spendComparisonChart').getContext('2d');
+        new Chart(spendComparisonCtx, {
             type: 'bar',
             data: {
-                labels: reelNames,
+                labels: ['Reels', 'No-Reels', 'Total Campaña'],
                 datasets: [{
-                    label: 'Conversaciones',
-                    data: conversations,
-                    backgroundColor: conversations.map(val => val >= 20 ? '#e74c3c' : val >= 1 ? '#f39c12' : '#95a5a6'),
-                    borderRadius: 8,
-                    borderWidth: 2
+                    label: 'Inversión ($)',
+                    data: [167.12, 58.38, 225.50],
+                    backgroundColor: ['#e74c3c', '#3498db', '#27ae60'],
+                    borderRadius: 8
                 }]
             },
             options: {
@@ -546,27 +531,42 @@
             }
         });
 
-        // Chart 2: CTR vs Hook Rate
-        const ctrHookCtx = document.getElementById('ctrHookChart').getContext('2d');
+        // Chart 3: Performance Individual Reels
+        const reelsCtx = document.getElementById('reelsPerformanceChart').getContext('2d');
+        new Chart(reelsCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Reel 6', 'Reel 2', 'Reel 7', 'Reel 8', 'Otros'],
+                datasets: [{
+                    label: 'Conversaciones',
+                    data: [24, 1, 1, 1, 0],
+                    backgroundColor: ['#e74c3c', '#f39c12', '#f39c12', '#f39c12', '#95a5a6'],
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: { legend: { display: false } },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // Chart 4: CTR vs Hook Rate - Solo Reels
+        const ctrHookCtx = document.getElementById('ctrHookReelsChart').getContext('2d');
         new Chart(ctrHookCtx, {
             type: 'scatter',
             data: {
                 datasets: [{
                     label: 'Reels',
-                    data: reelNames.map((name, i) => ({x: ctrValues[i], y: hookRates[i], label: name})),
-                    backgroundColor: reelNames.map((name, i) => {
-                        if (name === 'Reel 6') return '#e74c3c';
-                        if (name === 'Reel 1') return '#27ae60';
-                        if (name === 'Reel 7') return '#f39c12';
-                        return '#3498db';
-                    }),
-                    borderColor: reelNames.map((name, i) => {
-                        if (name === 'Reel 6') return '#c0392b';
-                        if (name === 'Reel 1') return '#1e8449';
-                        if (name === 'Reel 7') return '#d68910';
-                        return '#2980b9';
-                    }),
-                    pointRadius: reelNames.map((name, i) => name === 'Reel 6' ? 15 : 10)
+                    data: [
+                        {x: 5.13, y: 28.21, label: 'Reel 1'},
+                        {x: 2.56, y: 25.58, label: 'Reel 6'},
+                        {x: 2.54, y: 19.55, label: 'Reel 2'},
+                        {x: 0.85, y: 32.86, label: 'Reel 7'},
+                        {x: 1.80, y: 28.53, label: 'Reel 8'}
+                    ],
+                    backgroundColor: ['#27ae60', '#e74c3c', '#f39c12', '#9b59b6', '#3498db'],
+                    pointRadius: [12, 15, 8, 10, 8]
                 }]
             },
             options: {
@@ -579,84 +579,8 @@
                     tooltip: {
                         callbacks: {
                             label: function(context) {
-                                return `${reelNames[context.dataIndex]}: CTR ${context.parsed.x}%, Hook ${context.parsed.y}%`;
-                            }
-                        }
-                    }
-                }
-            }
-        });
-
-        // Chart 3: Inversión vs Performance
-        const spendCtx = document.getElementById('spendPerformanceChart').getContext('2d');
-        new Chart(spendCtx, {
-            type: 'bubble',
-            data: {
-                datasets: [{
-                    label: 'Reels',
-                    data: reelNames.map((name, i) => ({
-                        x: spend[i], 
-                        y: conversations[i], 
-                        r: ctrValues[i] * 3,
-                        label: name
-                    })),
-                    backgroundColor: reelNames.map((name, i) => {
-                        if (name === 'Reel 6') return 'rgba(231, 76, 60, 0.6)';
-                        if (name === 'Reel 1') return 'rgba(39, 174, 96, 0.6)';
-                        return 'rgba(52, 152, 219, 0.6)';
-                    })
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    x: { title: { display: true, text: 'Inversión ($)' } },
-                    y: { title: { display: true, text: 'Conversaciones' } }
-                },
-                plugins: {
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                const point = context.raw;
-                                return `${reelNames[context.dataIndex]}: $${point.x}, ${point.y} conv, CTR ${(point.r/3).toFixed(2)}%`;
-                            }
-                        }
-                    }
-                }
-            }
-        });
-
-        // Chart 4: Alcance vs CTR
-        const reachCtx = document.getElementById('reachEfficiencyChart').getContext('2d');
-        new Chart(reachCtx, {
-            type: 'scatter',
-            data: {
-                datasets: [{
-                    label: 'Reels',
-                    data: reelNames.map((name, i) => ({x: reach[i], y: ctrValues[i], label: name})),
-                    backgroundColor: reelNames.map((name, i) => {
-                        if (name === 'Reel 6') return '#e74c3c';
-                        if (name === 'Reel 1') return '#27ae60';
-                        return '#3498db';
-                    }),
-                    pointRadius: reelNames.map((name, i) => {
-                        if (name === 'Reel 6') return 15;
-                        if (name === 'Reel 1') return 12;
-                        return 8;
-                    })
-                }]
-            },
-            options: {
-                responsive: true,
-                scales: {
-                    x: { title: { display: true, text: 'Alcance' } },
-                    y: { title: { display: true, text: 'CTR (%)' } }
-                },
-                plugins: {
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return `${reelNames[context.dataIndex]}: ${context.parsed.x} alcance, ${context.parsed.y}% CTR`;
+                                const labels = ['Reel 1', 'Reel 6', 'Reel 2', 'Reel 7', 'Reel 8'];
+                                return `${labels[context.dataIndex]}: CTR ${context.parsed.x}%, Hook ${context.parsed.y}%`;
                             }
                         }
                     }
@@ -667,7 +591,7 @@
         // Animaciones al cargar
         window.addEventListener('load', function() {
             setTimeout(() => {
-                document.querySelectorAll('.reel-card').forEach((card, index) => {
+                document.querySelectorAll('.kpi-card').forEach((card, index) => {
                     setTimeout(() => {
                         card.style.animation = 'slideInUp 0.6s ease-out';
                     }, index * 100);
@@ -677,3 +601,8 @@
     </script>
 </body>
 </html>
+
+         
+       
+       
+    
